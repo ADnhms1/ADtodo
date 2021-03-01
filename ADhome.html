@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ADhome.css">
+</head>
+<body onload="startTime()">
+    <div id="header">
+        <ul>
+            <li><a id="uname"></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="ADprofile.html">Profile</a></li>
+            <li><a onclick="logout()">Sign Out</a></li>
+            <li id="time"><a id="time_a" href="#about"></a></li>
+        </ul>
+    </div>
+    <div class="todoHeader">
+        <input type="text" class="todo" id="todoText">
+        <button style="margin-left: 10px;" class="addButton" onclick="addItem()">Add</button>
+        <div class="dropdown" style="margin-left: 10px;">
+            <button onclick="myFunction()" id="currentDropdown" class="dropbtn">All</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a onclick="todoAll()">All</a>
+              <a onclick="todoCompleted()">Completed</a>
+              <a onclick="todoUncompleted()">Uncompleted</a>
+            </div>
+        </div>          
+    </div>
+    <div class="todo_list">
+        <ul id="list_items">
+
+        </ul>
+    </div>
+    <img onload="imageChange()" src="1.webp" alt="" id="image">
+    <div id="WeatherDiv">
+
+    </div>
+    <script src="ADtodo.js"></script>       
+</body>
+</html>
